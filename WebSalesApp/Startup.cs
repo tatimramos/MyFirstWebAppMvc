@@ -11,6 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebSalesApp.Data;
+using WebSalesApp.Services;
 
 namespace WebSalesApp
 {
@@ -42,6 +43,7 @@ namespace WebSalesApp
 
 
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
 
